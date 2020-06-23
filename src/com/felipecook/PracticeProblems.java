@@ -4,13 +4,25 @@ public class PracticeProblems {
 
 
   public static void main(String[] args) {
-    int solution = sumCalculator(21, 16, "");
-    System.out.println(solution);
+
+    Car felipesCar = new Car();
+
+    System.out.println("The current make of the car is: " + felipesCar.getMake());
+
+    felipesCar.setMake("Toyota");
+
+    System.out.println("Now the make of the car is: " + felipesCar.getMake());
+
+    felipesCar.drive();
+
+    Ford anasCar = new Ford();
+
+    System.out.println("The make of this car is currently: " + anasCar.getMake());
+
+    anasCar.drive();
+
   }
 
-  public static int sumCalculator(int a, int b, String name){
-    int solution = a + b;
-    return solution;
-  }
+
 
 }

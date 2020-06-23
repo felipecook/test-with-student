@@ -2,24 +2,37 @@ package com.felipecook;
 
 /*
 
-float = 3.4, -19.1
-double = 3.12345, -19.22123333
-
  */
 
 public class Car {
 
-  String make = "Nissan";
-  String model = "Sentra";
-  int numberOfDoors = 4;
+  private String make = "Unknown";
+  private String model = "Unknown";
+  private int numberOfDoors = 4;
 
-  void drive(){
+  public void drive(){
     System.out.println("This car is driving!");
   }
 
+  public String getMake() {
+    return make;
+  }
 
+  public void setMake(String make) {
+    this.make = make;
+  }
 
+  public String getModel() {
+    return model;
+  }
 
+  public void setModel(String model) {
+    this.model = model;
+  }
+
+  public int getNumberOfDoors() {
+    return numberOfDoors;
+  }
 
 
 }
